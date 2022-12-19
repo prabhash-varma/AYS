@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- <link rel="stylesheet" href="/packersandmovers.css"> -->
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>AYS-Contact Us</title>
+    <link rel="icon" type="img" href="/logo.jpg">
+
+    <script>
+        function check(){
+            alert("Message sent Successfully!");
+        }
+    </script>
+
+        
+           
+  </head>
+
+
+<body>
+
+
+<!--Navbar-->
+ <%- include('./partials/nav.ejs') %>
+
+          
+
+        
+ <br><br>
+  <section class="hero is-fullheight">
+      <div class="hero-body">
+          <div class="container has-text-centered">
+              <div class="columns is-8 is-variable ">
+                  <div class="column is-two-thirds has-text-left">
+
+                      <h1 class="title is-1">Contact Us</h1>
+                      <p class="is-size-4">
+                          
+                          Our mission is to empower millions of service professionals by delivering services in a way that has never been experienced before
+                      
+                      </p>
+                      <br>
+                      <!-- <div class="social-media">
+                          <a href="https://facebook.com" target="_blank" class="button is-light is-large"><i class="fa-brands fa-facebook"></i></a>
+                          <a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                          <a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </div> -->
+                  </div>
+
+                  <form action="/home/contactus" onsubmit="check()" method="post">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                       <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Your Name" required>
+                   </div>
+                   <div class="mb-3">
+                       <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                       <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com" required>
+                   </div>
+                 <div class="mb-3">
+                       <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                       <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" required></textarea>
+                 </div>
+
+                 <button type="submit" class="btn btn-primary">Send Message</button>
+
+                  </form>
+                      
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  
+  
+<!--Footer-->
+<%- include('./partials/footer.ejs') %>
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+   
+
+
+  </body>
+</html>
